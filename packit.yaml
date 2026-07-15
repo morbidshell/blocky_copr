@@ -1,0 +1,18 @@
+# See https://packit.dev/docs/configuration/ for more details
+specfile_path: blocky.spec
+
+# Upstream settings
+upstream_project_url: https://github.com/0xERR0R/blocky
+upstream_package_name: blocky
+
+# Downstream package name in Copr
+downstream_package_name: blocky
+
+# Define the build automation
+jobs:
+  - job: copr_build
+    trigger: release
+    owner: "@copr" # Or change to your Copr username/group if desired
+    project: blocky
+    targets:
+      - fedora-stable
