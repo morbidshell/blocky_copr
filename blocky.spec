@@ -1,4 +1,4 @@
-# Packit will dynamically update these fields on every new GitHub release
+# Packit will dynamically update these fields on every new GitHub release.
 Name:           blocky
 Version:        0
 Release:        1%{?dist}
@@ -12,7 +12,7 @@ BuildRequires:  golang >= 1.21
 BuildRequires:  systemd-rpm-macros
 BuildRequires:  systemd
 
-# Ensure the package is only built on Go-supported architectures
+# Ensure the package is only built on Go-supported architectures.
 ExclusiveArch:  %{golang_arches_future}
 
 Requires(pre):  shadow-utils
