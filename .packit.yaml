@@ -11,7 +11,7 @@ downstream_package_name: blocky
 # Define the build automation
 jobs:
   - job: copr_build
-    trigger: release
+    trigger: pull_request
     owner: "@copr" # Or change to your Copr username/group if desired
     project: blocky
     targets:
